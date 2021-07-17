@@ -8,5 +8,13 @@ namespace Course
 {
     class Product
     {
+        public string Nome;
+        public double Preco;
+        public int Quantidade;
+
+        public double ValorTotalEmEstoque()
+        {
+            return Preco * Quantidade;
+        }
     }
 }
